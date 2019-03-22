@@ -1,0 +1,35 @@
+<!doctype HTML>
+
+<head>
+  <script src="change_webpage.js"></script>
+  <link rel="stylesheet" style="text/css" href="webpage_style.css">
+</head>
+
+<body>
+  <div class="buttons">
+    <button id="button" onClick="resizeFont(1)">Increase text size</button>
+    <button id="button" onClick="resizeFont(-1)">Decrease text size</button>
+    <button id="button" onClick="changeImage(1)">View next image</button>
+    <button id="button" onClick="changeImage(-1)">View previous image</button>	
+  </div>
+
+  <div class="mainText">
+    <h1 id="mainText">Look at ME</h1>
+  </div>
+
+  <br>
+
+  <div class="imageCarousel">
+    <img id="image" src="image1.jpg">
+  </div>
+
+  <br>
+
+  <div class="shoppingList">
+    <label>Add to shopping list:</label>
+    <input id="listInput" type="text" value=" Enter something here..." />
+    <input id="button" type="button" value="Submit" onClick="addToList()"/>
+    <br>
+    <div id="listValues" onClick="removeFromList()"></div>
+  </div>
+</body>
